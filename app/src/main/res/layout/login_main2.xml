@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="25dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/login_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yaheng_logo_t2"
+                    android:layout_marginBottom="15dp"/>
+
+                <!--/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:text="分 组:"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="20dp" />-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/userGroup"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7"-->
+                <!--android:spinnerMode="dropdown" />-->
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:text="用户组:"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:layout_weight="0.75"
+                    android:id="@+id/userGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:text="账   户:"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textAccount2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:padding="6dp"
+                    android:background="@drawable/background_select"
+                    android:hint="请输入手机号"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:text="密   码:"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
+
+
+
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textPassword2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/background_select"
+                    android:padding="6dp"
+                    android:textSize="16dp"
+                    android:hint="请输入密码"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:text="注 册"
+                    android:id="@+id/distributorSignUp2"
+                    android:background="@drawable/button_shape1"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="enterUserSignUp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:text="登 录"
+                    android:id="@+id/distributorLogin2"
+                    android:background="@drawable/button_shape1"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="enterOverlayPanel"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="1dp">
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_btn_ble"-->
+                    <!--android:layout_marginRight="0dp"-->
+                    <!--android:paddingLeft="7dp"-->
+                    <!--android:paddingRight="0dp"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:paddingTop="5dp"-->
+                    <!--android:paddingBottom="5dp"-->
+                    <!--android:layout_width="32dp"-->
+                    <!--android:layout_height="32dp"-->
+                    <!--android:src="@drawable/ble_log"-->
+                    <!--/>-->
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="忘记密码?"
+                    android:id="@+id/passwordFind2"
+                    android:textSize="15dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="7dp"
+                    android:layout_marginTop="0dp"
+                    android:onClick="enterForgetPWPanel"
+                    android:paddingLeft="2.5dp"
+                    android:paddingRight="7dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="25dp">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:layout_gravity="right"
+            android:padding="6dp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

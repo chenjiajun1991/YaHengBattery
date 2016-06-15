@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#212121">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/track_back"
+             android:drawableLeft="@drawable/mms_back"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="left|center"
+             android:text="返回"
+             android:textColor="#ffffff"
+             android:textSize="16sp"
+             />
+
+         <TextView
+
+             android:id="@+id/chose_date"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="2016-06-06"
+             android:textColor="#ffffff"
+             android:textSize="16sp"
+             android:layout_centerInParent="true"
+             />
+
+         <ImageView
+             android:id="@+id/iv_calendar"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:gravity="center"
+             android:src="@drawable/calend2"
+            android:layout_marginRight="10dp"
+             />
+     </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:id="@+id/tv_datetime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:textColor="#0000D8" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_distance"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dip"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:textColor="#0000D8" />-->
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dip"
+        android:background="#FFFFFF"
+        android:text="@string/date"
+        android:textColor="#000000"
+        android:visibility="invisible"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_isProcessed"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@+id/btn_date"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="10dip"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:text="@string/is_processed"-->
+        <!--android:textColor="#000000" />-->
+
+</RelativeLayout>

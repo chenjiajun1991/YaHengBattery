@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:text="header"
+        android:drawableLeft="@drawable/dx_expander_minimized"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/summary_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="left|center_vertical"
+                android:text="电量：" />
+            <ImageView
+                android:layout_marginLeft="7dp"
+                android:id="@+id/voltageInfoList"
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_launcher"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/item_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:text="body" />
+
+
+
+        <Switch
+            android:layout_marginTop="5dp"
+            android:id="@+id/battery_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布防："
+            android:textSize="14sp"
+            android:visibility="visible"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/text_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:textSize="14sp"
+                android:text="轨迹回放："
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/track2"/>
+
+            <!--<ImageView-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:id="@+id/image_track"-->
+                <!--android:layout_width="23dp"-->
+                <!--android:layout_height="23dp"-->
+                <!--android:src="@drawable/track"/>-->
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

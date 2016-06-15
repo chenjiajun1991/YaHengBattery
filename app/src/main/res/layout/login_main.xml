@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yaheng_logo_t"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65"
+                android:orientation="vertical"
+                android:gravity="top">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <Spinner
+                        android:id="@+id/userGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_edittext_gray"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/accountImage"
+                            android:src="@drawable/user_new"
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/textAccount"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.8"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textColor="@android:color/black"
+                            android:padding="7dp"
+                            android:hint="@string/enter_user_account"
+                            android:background="@android:color/transparent" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/accountDelImage"
+                            android:src="@drawable/btn_delete"
+                            android:layout_weight="0.1"
+                            android:visibility="invisible"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/passwordImage"
+                            android:src="@drawable/pwd_new"
+                            android:layout_weight="0.1"
+                            android:layout_gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/textPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.8"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textColor="@android:color/black"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/enter_password"
+                            android:padding="7dp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/passwordDelImage"
+                            android:src="@drawable/btn_delete"
+                            android:layout_weight="0.1"
+                            android:visibility="invisible"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="登 录"
+                        android:clickable="true"
+                        android:id="@+id/distributorSignUp"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="enterOverlayPanel"
+                        android:background="@drawable/choose_button_blue"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="注 册"
+                        android:id="@+id/distributorLogin"
+                        android:textSize="18dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/choose_button_orange"
+                        android:onClick="enterUserSignUp"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="1dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忘记密码?"
+                        android:id="@+id/passwordFind"
+                        android:textSize="15dp"
+                        android:layout_marginTop="0dp"
+                        android:onClick="enterForgetPWPanel"
+                        android:textColor="#2d68e8"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:layout_gravity="right"
+            android:padding="6dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

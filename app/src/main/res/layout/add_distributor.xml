@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加经销商信息"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/distributorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/textview_signup"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号："
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/distributorPN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/textview_signup"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="省市："
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <Spinner
+                        android:id="@+id/distributor_province"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown"
+                        style="@style/TextAppearance.AppCompat.Widget.DropDownItem" />
+
+                    <Spinner
+                        android:id="@+id/distributor_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="街道地址："
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/distributorStreetAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/textview_signup"
+                    android:textSize="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="纬度："
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="17dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:id="@+id/distributorLat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/textview_signup"
+                            android:textSize="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="经度："
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="17dp"
+                            android:layout_marginTop="10dp"/>
+                        <EditText
+                            android:id="@+id/distributorLon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:singleLine="true"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/textview_signup"
+                            android:textSize="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动生成"
+                        android:id="@+id/buttonGenLatLon"
+                        android:onClick="getAddressGeoCode"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="添加"
+                    android:id="@+id/buttonAddDistributor"
+                    android:background="@drawable/button_signup"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:onClick="addDistributorInfo"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

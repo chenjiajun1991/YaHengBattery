@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="gray">#FFF3F3F3</color>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="customActionBar" parent="AppBaseTheme">
+        <item name="actionMenuTextAppearance">@style/CustomMenuStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/CustomMenuStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+    </style>
+
+    <style name="customNoActionBar" parent="AppBaseTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="Widget.AppCompat.Base.ActionButton">
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/CustomTextStyle</item>
+        <item name="android:titleTextStyle">@style/CustomTextStyle</item>
+    </style>
+
+    <style name="CustomTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="CustomMenuStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.CompactMenu.Dialog">
+        <item name="android:textViewStyle">@style/CenterTextView</item>
+    </style>
+
+    <style name="CenterTextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <style name="CenterJustifyTheme1" parent="@android:style/Theme.Translucent">
+        <item name="android:textViewStyle">@style/CenterTextView</item>
+    </style>
+</resources>

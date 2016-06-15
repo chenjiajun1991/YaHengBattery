@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="lastAccount">18321014213</string>
+    <float name="user_lon" value="121.38108" />
+    <float name="user_zoom" value="13.0" />
+    <float name="user_lat" value="31.18052" />
+    <string name="json">[&quot;test1&quot;,&quot;test2&quot;]</string>
+    <string name="loginView">UserView</string>
+    <int name="accountType" value="0" />
+    <boolean name="LoggedIn" value="true" />
+</map>

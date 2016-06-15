@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_loc_refresh"
+        android:icon="@drawable/reload"
+        android:title="@string/loc_refresh"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/action_personal_info"
+        android:icon="@drawable/perm_group_personal_info"
+        android:title="@string/personal_info"
+        android:showAsAction="always"
+        app:showAsAction="always"/>
+</menu>
+
+    <!--android:icon="@drawable/my_main_avatar_default"-->
